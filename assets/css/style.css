@@ -56,40 +56,44 @@ h3 {
   position: fixed;
   z-index: 99;
   width: 100%;
-  margin: 0 0 30px;
+  margin: 0 0 10px;
   overflow: auto;
   color: #ffffff;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
+  padding: 0;
 }
 
 #logo {
   float: left;
   width: 250px;
-  height: 90px;
+  height: 100%;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #ffffff;
-  text-align: center;
+  text-align: lefts;
   text-decoration: none;
   background: #4aaaa5;
+
 }
 
 nav {
-  float: right;
-  margin-top: 25px;
+  float: left;
+  margin-top: 0px;
 }
 
 nav a {
   display: inline-block;
   padding-left: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
+  margin-left: 0px;
   line-height: 18px;
   color: #999;
   text-decoration: none;
   border-left: 1px solid #efefef;
+  clear: both;
 }
 
 nav a:first-child {
@@ -214,4 +218,28 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+.form-inline {
+  float: right;
+}
+
+#navbar {
+
+  float: center;
+  padding: 0;
+}  
+
+#logo.navbar-brand{
+  padding: 0;
+  text-align: center;
+}
+
+nav.navbar.navbar-clear.bg-clear{
+  padding: 0;
+  width: 960px;
+}
+
+form.form-inline{
+  float: right;
 }
